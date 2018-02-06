@@ -1,6 +1,5 @@
 package com.naco3x.basicgeolocation
 
-//import android.support.v7.widget.TextView
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_geolocation.*
@@ -10,8 +9,6 @@ class GeolocationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_geolocation)
-        geoTextView.text = "Starting out"
-        //this.textView = findViewById(R.id.geoTextView) as TextView
 
         geoGetButton.setOnClickListener {
                         try {
@@ -20,6 +17,6 @@ class GeolocationActivity : AppCompatActivity() {
             }
             catch (e : SecurityException) {
             }
+        }
     }
-    }
-    }
+}
